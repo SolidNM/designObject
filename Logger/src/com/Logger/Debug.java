@@ -1,4 +1,4 @@
-package com;
+package com.Logger;
 
 public class Debug implements Logger {
 

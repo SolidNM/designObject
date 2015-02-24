@@ -1,6 +1,8 @@
-Bibliographie :
+# Bibliographie :
+=================
+Pattern : Sujet, package impact�, Lien.
+>>>>>>> branch 'master' of https://github.com/SolidNM/designObject
 
-Pattern : Sujet, Lien, Quelle classe cela impacte ?
-
-"Design Pattern - Factory Pattern"[Online]. Hyderabad:Tutorials Points. Available at:
+* "Design Pattern - Factory Pattern"[Online]. Hyderabad:Tutorials Points. Available at:
 <www.tutorialspoint.com/design_pattern/factory_pattern.htm> [Accessed 24/02/2015]. 
+
