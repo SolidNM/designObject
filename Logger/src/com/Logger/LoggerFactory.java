@@ -1,4 +1,4 @@
-package com;
+package com.Logger;
 
 public class LoggerFactory {
 	//use getLogger method to get object of type logger
