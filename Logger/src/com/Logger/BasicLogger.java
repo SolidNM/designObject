@@ -12,7 +12,7 @@ public class BasicLogger implements Logger{
 	}
 	
 	private void affiche(String levelOfLog, String message) {
-		System.out.println(this.simpleDateFormat.format(new Date()) + " " + message);
+		System.out.println(this.simpleDateFormat.format(new Date()) + " [LEVEL=" + levelOfLog + " MESSAGE= " + message + "]");
 		}
 	
 	@Override
