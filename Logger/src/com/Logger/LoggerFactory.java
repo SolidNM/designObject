@@ -7,13 +7,13 @@ public class LoggerFactory {
 			return null;
 		
 		if(loggerType.equalsIgnoreCase("DEBUG")){
-			return new BasicLogger();
+			return new BasicLogger(LevelOfLog.DEBUG);
 		
 		}else if(loggerType.equalsIgnoreCase("INFO")){
-			return new BasicLogger();
+			return new BasicLogger(LevelOfLog.INFO);
 			
 		}else if(loggerType.equalsIgnoreCase("ERROR")){
-			return new BasicLogger();
+			return new BasicLogger(LevelOfLog.ERROR);
 		}
 		
 		return null;
