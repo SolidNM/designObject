@@ -1,6 +1,10 @@
 package com.Logger;
 
 public interface Logger {
-	void display();
+	void debug();
+	
+	void info();
+	
+	void error();
 
 }

@@ -6,13 +6,13 @@ public class LoggerFactory {
 		if(loggerType == null)
 			return null;
 		
-		if(loggerType.equalsIgnoreCase("debug")){
+		if(loggerType.equalsIgnoreCase("DEBUG")){
 			return new Debug();
 		
-		}else if(loggerType.equalsIgnoreCase("info")){
+		}else if(loggerType.equalsIgnoreCase("INFO")){
 			return new Info();
 			
-		}else if(loggerType.equalsIgnoreCase("error")){
+		}else if(loggerType.equalsIgnoreCase("ERROR")){
 			return new Error();
 		}
 		
