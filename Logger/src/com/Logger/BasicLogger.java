@@ -14,7 +14,8 @@ public class BasicLogger implements Logger{
 	}
 	
 	private void affiche(LevelOfLog lol, String message) {
-		System.out.println(this.simpleDateFormat.format(new Date()) + " [LEVEL=" + levelOfLog + " MESSAGE= " + message + "]");
+		if(lol.compareTo(this.levelOfLog) >= 0)
+		System.out.println(this.simpleDateFormat.format(new Date()) + " [LEVEL=" + lol.name() + " MESSAGE= " + message + "]");
 		}
 	
 	@Override
