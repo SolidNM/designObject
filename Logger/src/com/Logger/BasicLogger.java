@@ -1,25 +1,28 @@
 package com.Logger;
 
+
 public class BasicLogger implements Logger{
 
-
+	private void affiche(String levelOfLog, String message) {
+		System.out.println(message);
+		}
 	
 	@Override
 	public void debug(String message) {
-		// TODO Auto-generated method stub
+		this.affiche("DEBUG",message);
 	
 	}
 
 
 	@Override
 	public void info(String message) {
-		// TODO Auto-generated method stub
+		this.affiche("INFO", message);
 		
 	}
 
 	@Override
 	public void error(String message) {
-		// TODO Auto-generated method stub
+		this.affiche("ERROR", message);
 		
 	}
 
