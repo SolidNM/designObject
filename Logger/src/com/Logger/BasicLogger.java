@@ -1,10 +1,18 @@
 package com.Logger;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class BasicLogger implements Logger{
 
+	private SimpleDateFormat simpleDateFormat;
+
+	public BasicLogger(){
+		this.simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+	}
+	
 	private void affiche(String levelOfLog, String message) {
-		System.out.println(message);
+		System.out.println(this.simpleDateFormat.format(new Date()) + " " + message);
 		}
 	
 	@Override
