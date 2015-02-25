@@ -16,7 +16,7 @@ public class Debug implements Logger {
 		StringBuilder builder = new StringBuilder();
 		date=sdf.format(new Date());
 		builder.append(date.toString());
-		builder.append(" [LEVEL=DEBUG MESSAGE=");
+		builder.append(" [NAME=COM.LOGGER LEVEL=DEBUG MESSAGE= ");
 		builder.append(message);
 		builder.append("]");
 		System.out.println(builder.toString());
@@ -27,7 +27,7 @@ public class Debug implements Logger {
 		StringBuilder builder = new StringBuilder();
 		date=sdf.format(new Date());
 		builder.append(date.toString());
-		builder.append(" [LEVEL=INFO MESSAGE=");
+		builder.append(" [NAME=COM.LOGGER LEVEL=INFO MESSAGE= ");
 		builder.append(message);
 		builder.append("]");
 		System.out.println(builder.toString());
@@ -38,7 +38,7 @@ public class Debug implements Logger {
 		StringBuilder builder = new StringBuilder();
 		date=sdf.format(new Date());
 		builder.append(date.toString());
-		builder.append(" [LEVEL=ERROR MESSAGE=");
+		builder.append(" [NAME=COM.LOGGER LEVEL=ERROR MESSAGE= ");
 		builder.append(message);
 		builder.append("]");
 		System.out.println(builder.toString());
