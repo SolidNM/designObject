@@ -1,5 +1,8 @@
 package com.Logger;
 
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
+
 
 public class LoggerFactory {
 	//use getLogger method to get object of type logger
@@ -14,7 +17,15 @@ public class LoggerFactory {
 			return new BasicLogger(LevelOfLog.INFO, System.out);
 			
 		}else if(loggerType.equalsIgnoreCase("ERROR")){
-			return new BasicLogger(LevelOfLog.ERROR, System.out);
+			PrintStream test;
+			try {
+				test = new PrintStream("/home/nicolas/Bureau/test.txt");
+				return new BasicLogger(LevelOfLog.ERROR, test);
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
 		}
 		
 		return null;
