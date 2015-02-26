@@ -1,5 +1,7 @@
 package com;
 
+import java.io.FileNotFoundException;
+
 import com.Logger.Logger;
 import com.Logger.LoggerFactory;
 
@@ -7,7 +9,7 @@ public class MaClasse {
 
 
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		
 		
 		LoggerFactory loggerFactory = new LoggerFactory();
