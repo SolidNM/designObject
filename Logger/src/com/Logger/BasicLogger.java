@@ -1,5 +1,6 @@
 package com.Logger;
 
+import java.io.PrintStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -7,10 +8,12 @@ public class BasicLogger implements Logger{
 
 	private SimpleDateFormat simpleDateFormat;
 	private LevelOfLog levelOfLog;
+	private PrintStream out;
 
-	public BasicLogger(LevelOfLog lol){
+	public BasicLogger(LevelOfLog lol, PrintStream stream){
 		this.simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
 		this.levelOfLog = lol;
+		this.out = stream;
 	}
 	
 	private void affiche(LevelOfLog lol, String message) {
@@ -21,7 +24,7 @@ public class BasicLogger implements Logger{
 			build.append(" [LEVEL=").append(lol.name());
 			build.append(" MESSAGE= ").append(message);
 			build.append("]");
-			System.out.println(build);
+			this.out.println(build);
 		}
 		
 	}
