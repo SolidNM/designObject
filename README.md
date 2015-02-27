@@ -5,7 +5,8 @@ Projet Architecture logiciel (Framework Logger)
 Architecture du projet
 ======================
  * Package com :
-  * Maclass.java : class qui permet de lancer l'affichage en console (seulement), avec présentation de l'affichage en console sur trois niveaux (DEBUG, INFO et ERROR)
+  * Maclass.java : class qui permet de lancer l'affichage, avec présentation de l'affichage en console sur trois niveaux (DEBUG, INFO et ERROR)
+  	Parametrage possible en changeant directement les PrintStream dans la classe LoggerFactory. Console et fichier pris en compte.
 
  * Package com.Logger :
   * BasicLogger.java : class qui centralise l'affichage et la sortie du flux en console
